@@ -1,3 +1,4 @@
+@extends('layouts.footer')
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -110,5 +111,6 @@
             @yield('content')
         </main>
     </div>
+    @yield('footer')
 </body>
 </html>

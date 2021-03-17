@@ -54,6 +54,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+main {
+  min-height: 100vh;
+  background: white;
+  z-index: 1;
+  position: relative;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -10003,4 +10010,30 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  align-items: center;
+  background: #FA6812;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer .logo{
+  padding: 1rem;
+}
+
+footer a {
+  color: rgb(255, 255, 255, 0.7);
+}
+
+footer a:hover {
+  color: rgb(255, 255, 255, 0.9);
 }
