@@ -6,3 +6,39 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+main {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: white;
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.15);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    align-items: center;
+    background: #FA6812;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  footer .logo{
+    padding: 1rem;
+  }
+  
+  footer a {
+    color: rgb(255, 255, 255, 0.7);
+  }
+  
+  footer a:hover {
+    color: rgb(255, 255, 255, 0.9);
+  }
