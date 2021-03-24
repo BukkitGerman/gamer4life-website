@@ -92,6 +92,10 @@ Route::get('/insertdata', function(){
     return redirect('/')->with('status', 'Testdaten erfolgreich eingesetzt!');
 });
 
+//Impressum and Datenschutz Routes
+Route::get('/impressum', function(){ return view('impressum'); })->name('impressum');
+Route::get('/datenschutz', function(){ return view('datenschutz'); })->name('datenschutz');
+
 
 //Profile Routes
 Route::redirect('profile','/');
